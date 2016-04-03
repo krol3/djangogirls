@@ -1,1 +1,7 @@
-/mysite/__pycache__/*
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+mysite/__pycache__/*
+blog/__pycache__/*
