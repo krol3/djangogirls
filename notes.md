@@ -1,5 +1,6 @@
 #Tutorial djangogirls
 http://tutorial.djangogirls.org/pt/
+http://tutorial.djangogirls.org/pt/django_orm/
 
 python3 python_intro.py
 
@@ -30,23 +31,37 @@ python manage.py migrate blog
 python manage.py createsuperuser
 admin / admin
 
-#deploy server
+#deploy server pythonanywhere
+http://tutorial.djangogirls.org/pt/deploy/
 http://pythonanywhere.com/
 krol / =
+http://krol.pythonanywhere.com/admin/
+
 virtualenv --python=python3.4 myvenv
 source myvenv/bin/activate
 ##coleta de arquivos estaticos
 pip install django whitenoise
 python manage.py collectstatic
 
+python manage.py migrate
+python manage.py createsuperuser
+krol3 / email
 
-#git
+krol.pythonanywhere.com
+virtualenv : /home//my-first-blog/myvenv/
+ which python
+/home/krol/djangogirls/myvenv/bin/python
+
+WSGI protocol
+
+## update in the cloud
+git pull
+python manage.py collectstatic
 
 #Recursos :
 
 https://github.com/ggcarrots/django-carrots
 http://django-marcador.keimlink.de/
 
-Author, Twisted chapter for The Architecture of Open Source Applications, Volume II
-http://web.mit.edu/jesstess/www/
+
 
