@@ -1,67 +1,35 @@
-#Tutorial djangogirls
-http://tutorial.djangogirls.org/pt/
-http://tutorial.djangogirls.org/pt/django_orm/
+# setting environment
 
-python3 python_intro.py
+sudo apt-get install python-virtualenv
+virtualenv --python=python3.5 myvenv
+source myvenv/bin/activate
+pip install --upgrade pip
+pip install django~=1.10.0
 
-#virtualenv
-
-python --version 
-mkproject djangogirls -p /usr/bin/python3
-
-pip install django==1.8.5
-
+# create project
 django-admin startproject mysite .
 
+# create DB
 python manage.py migrate
 
-##run the app
+# starting web server
 python manage.py runserver
 
-##criar um aplicativo separado dentro do nosso projeto blog
+# Creating an application
 python manage.py startapp blog
 
-###adicionar nosso novo modelo para nosso banco de dados
+# Create tables for models in your database
 python manage.py makemigrations blog
 
-###Django prepara um arquivo de migração que temos de aplicar agora para nosso banco de dados
+# Django prepared a migration file for us that we now have to apply to our database
 python manage.py migrate blog
 
-### criar um superuser
+# admin create user
 python manage.py createsuperuser
-admin / admin
+admin:carolina3#
 
-#deploy server pythonanywhere
-http://tutorial.djangogirls.org/pt/deploy/
-http://pythonanywhere.com/
-krol / =
-http://krol.pythonanywhere.com/admin/
+# deploy
+https://www.pythonanywhere.com/
 
-virtualenv --python=python3.4 myvenv
-source myvenv/bin/activate
-##coleta de arquivos estaticos
-pip install django whitenoise
-python manage.py collectstatic
-
-python manage.py migrate
-python manage.py createsuperuser
-krol3 / email
-
-krol.pythonanywhere.com
-virtualenv : /home//my-first-blog/myvenv/
- which python
-/home/krol/djangogirls/myvenv/bin/python
-
-WSGI protocol
-
-## update in the cloud
-git pull
-python manage.py collectstatic
-
-#Recursos :
-
-https://github.com/ggcarrots/django-carrots
-http://django-marcador.keimlink.de/
-
-
-
+# tutorial
+https://tutorial.djangogirls.org/en/deploy/
